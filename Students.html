@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Students</title>
+        <link rel="stylesheet" href="css/style.css" type=text/css>
+    </head>
+    <body>
+        <!--Header Logo-->    
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <img src="images/logo_transparent.png" alt="Site Logo">
+                </div>
+                <nav></nav>
+            </div>
+        </header>
+        <!--Navigation Bar-->
+        <div class="topnav">
+            <a href="Summary.html">Summary</a>
+            <a href="Trainers.html">Trainers</a>
+            <a class="active" href="#Students">Students</a>
+            <a href="Courses.html">Courses</a>
+            <a href="Assignments.html">Assignments</a>
+            <!--Logout Icon-->
+            <div class="logout"><img src="images/logout.png" alt="LogOut Logo" onclick="logOut()"><script src="js/logout.js"></script></div>                        
+        <!--Background Animation-->
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <!--Content-->
+        <div class="students">
+            <div class="students-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Assignment</label>
+                        <br>
+                        <select id="assignment" name="assignment">
+                            <option value="Assignment 1">Assignment 1</option>
+                            <option value="Individual Project - Part A">Individual Project - Part A</option>
+                            <option value="Individual Project - Part B">Individual Project - Part B</option>
+                            <option value="Assignment 2">Assignment 2</option>
+                            <option value="Assignment 3">Assignment 3</option>
+                            <option value="Assignment 4">Assignment 4</option>
+                            <option value="Assignment 5">Assignment 5</option>
+                            <option value="Group Project">Group Project</option>                        
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Course</label>
+                        <br>
+                        <select id="course" name="course">
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="C#">C#</option>
+                            <option value="JavaScript">JavaScript</option>                         
+                        </select>
+                    </div>
+                    <br>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </div>
+            <br/>
+            <div class = "students-table">
+                    <table class="list" id="studentList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Email Id</th>
+                                <th>Course</th>
+                                <th>Assignment</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    <!--Footer-->
+    <div class="footer">
+        <p><b> Copyright &copy; Nikolaos Bikas 2021.</b></p>
+    </div>
+        <script src="js/students.js"></script>
+    </body>
+</html>

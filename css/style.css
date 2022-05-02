@@ -1,0 +1,495 @@
+html {
+    height:100%;
+  }
+
+  .content {
+    width: 30%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:rgba(128, 128, 128, 0.384);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  body {
+    margin:0;
+    background-color: rgb(75, 75, 75);
+  }
+
+
+  input[type=text], input[type=number] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  input[type=submit]{
+      width: 30%;
+      background-color: #ddd;
+      color: #000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+    position:absolute; 
+    top:0; 
+    left:0; 
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color:rgba(255,255,255,.8);
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(202, 202, 202);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(243, 114, 9);
+    color: white;
+  }
+
+  .topnav .logout img {
+    float: right;
+    padding: 6px 30px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+    /* Background 1 */
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(243, 114, 9) 50%, rgb(97, 97, 97) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+    /* Background 2 */
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+    /* Background 3 */
+  .bg3 {
+    animation-duration:5s;
+  }
+
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  .content_summary {
+    border-style: solid;
+    align-content: center;
+    width: 40%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:rgba(128, 128, 128, 0.384);
+    left:50%;
+    padding:10vmin;
+    position:fixed; 
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  #content_summary #row .summary_table {
+    width:800px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color:rgba(128, 128, 128, 0.384);
+    padding:10vmin;
+    text-align:center;
+    transform:translate(-50%, -50%);
+  }
+
+  .students {
+    width: 30%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:none;
+    left:50%;
+    padding:10vmin;
+    position:absolute; 
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .students-form {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 50px;
+    /* width: 50%; */
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);
+  }
+
+  .students-table {
+      border-style: solid;      
+      /* margin-bottom: 10px; */
+      /* margin-left: 10px; */
+      padding: 20px;
+      /* width: 50%; */
+      margin: auto;
+      width: 100%;
+      /* border: 3px solid green; */
+      /* padding: 10px; */
+      background-color: rgba(128, 128, 128, 0.384);  }
+
+  .trainers {
+    width: 30%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:none;
+    left:50%;
+    padding:10vmin;
+    position:absolute; 
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+    
+  }
+
+  .trainers-form {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 50px;
+    /* width: 50%; */
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);
+  }
+
+  .trainers-table {
+    
+    border-style: solid;      
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 20px;
+    /* width: 50%; */
+    margin-left:-300px; 
+    margin-right:auto; 
+    width:200%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);
+    
+  }
+
+  .courses {
+    width: 30%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:none;
+    left:50%;
+    padding:10vmin;
+    position:absolute; 
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .courses-form {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 50px;
+    /* width: 50%; */
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);
+  }
+
+  .courses-table {
+      border-style: solid;      
+      /* margin-bottom: 10px; */
+      /* margin-left: 10px; */
+      padding: 20px;
+      /* width: 50%; */
+      margin: auto;
+      width: 100%;
+      /* border: 3px solid green; */
+      /* padding: 10px; */
+      background-color: rgba(128, 128, 128, 0.384);  }
+
+  .assignments {
+    width: 30%;
+    resize: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+    background-color:none;
+    left:50%;
+    padding:10vmin;
+    position:absolute; 
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+    
+  .assignements-form {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 50px;
+    /* width: 50%; */
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);
+  }
+    
+  .assignments-table {
+    border-style: solid;      
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 20px;
+    /* width: 50%; */
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+    background-color: rgba(128, 128, 128, 0.384);  
+  }
+
+  body > table{
+      width: 80%;
+  }
+
+  table{
+      border-collapse: collapse;
+  }
+  table.list{
+      width:100%;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  thead tr:nth-child(2) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(3) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(4) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(5) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(6) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(7) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(8) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(9) th {
+    font-weight:normal;
+  }
+  thead tr:nth-child(10) th {
+    font-weight:normal;
+  }
+
+
+
+  input[type=text], input[type=number], input[type=email], input[type=date] {
+      width: 100%;
+      padding: 8px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  input[type=submit] {
+      width: 30%;
+      background-color: black;
+      color: white;
+      padding: 10px 18px;
+      /* margin: 0px 0; */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+
+
+  select[type=option] {
+      width: 30%;
+      background-color: black;
+      color: white;
+      /* margin: 0px 0; */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  form div.form-action-buttons{
+      text-align: right;
+  }
+
+  a{
+      cursor: pointer;
+      text-decoration: underline;
+      color: #0000ee;
+      margin-right: 4px;
+  }
+
+  label.validation-error{
+      color:   red;
+      margin-left: 5px;
+  }
+
+  .hide{
+      display:none;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.8);
+    color: black;
+    text-align: center;
+  }
+
+  /* Style the input container */
+.topnav .login-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=username] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+/* Style the password field inside the navbar */
+.topnav input[type=password] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+/* Style the button inside the input container */
+.topnav .login-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #ccc;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav .login-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}

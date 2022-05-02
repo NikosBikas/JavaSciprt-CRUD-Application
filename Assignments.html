@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignments</title>
+        <link rel="stylesheet" href="css/style.css" type=text/css>
+        
+    </head>
+    <body>
+        <!--Header Logo-->    
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <img src="images/logo_transparent.png" alt="Site Logo">
+                </div>
+                <nav></nav>
+            </div>
+        </header>
+        <!--Navigation Bar-->
+        <div class="topnav">
+            <a href="Summary.html">Summary</a>
+            <a href="Trainers.html">Trainers</a>
+            <a href="Students.html">Students</a>
+            <a href="Courses.html">Courses</a>
+            <a class="active" href="Assignments.html">Assignments</a>
+            <!--Logout Icon-->
+            <div class="logout"><img src="images/logout.png" alt="LogOut Logo" onclick="logOut()"><script src="js/logout.js"></script></div>            
+        <!--Background Animation-->
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <!--Content-->
+        <div class="assignments">
+            <div class="assignements-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Assignment Description*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="assignments" id="assignments">
+                    </div>
+                    <div>
+                        <label>Date of Entry</label>
+                        <br>
+                        <input type="date" name="date_entry" id="date_entry">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </div>
+            <br/>
+            <div class = "assignments-table">
+                    <table class="list" id="assignmentsList">
+                        <thead>
+                            <tr>
+                                <th scope="col">Assignment ID</th>
+                                <th scope="col">Date of Entry</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    <!--Footer-->
+    <div class="footer">
+        <p><b> Copyright &copy; Nikolaos Bikas 2021.</b></p>
+    </div>
+        <script src="js/assigbments.js"></script>
+    </body>
+</html>
